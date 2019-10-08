@@ -23,3 +23,46 @@ const filterArray = languages.filter((item) => {
 });
 
 console.log(filterArray);
+
+// Map Array
+
+const mapArray = languages.map((item) => {
+    return item.favLanguage;
+});
+
+console.log(mapArray);
+
+/* Find Array
+- This returns true/false for each item until it finally
+finds something that matches (true) */
+
+const findArray = languages.find((item) => {
+    return item.favLanguage === 'Ruby';
+});
+
+console.log(findArray);
+
+// forEach (this does not return anything)
+
+languages.forEach((item) => {
+    console.log(item.id); 
+    // this will print out every single item that we specify inside the array
+});
+
+
+// Some Array (only checks 1 item)
+
+const hasIdLessThan10Some = languages.some((item) => {
+    return item.id <= 4;
+});
+
+console.log(hasIdLessThan10Some); // returns true
+
+// Every Array
+
+const hasIdLessThan10Every = languages.every((item) => {
+    return item.id <= 10;
+    // this will check every item in the array to see if the id is <10
+});
+
+console.log(hasIdLessThan10Every); // returns false
