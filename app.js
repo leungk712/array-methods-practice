@@ -66,3 +66,5 @@ const hasIdLessThan10Every = languages.every((item) => {
 });
 
 console.log(hasIdLessThan10Every); // returns false
+
+// Reduce Array
